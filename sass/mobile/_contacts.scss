@@ -1,0 +1,20 @@
+@media screen and (max-width: 763px) {
+  .contacts__footer--address {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    color: #ffffff;
+  }
+}
+
+.contacts__footer--mail,
+.contacts__footer--tel {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 763px) {
+  .contacts__footer--section {
+    text-align: center;
+  }
+}

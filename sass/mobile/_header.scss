@@ -1,0 +1,10 @@
+.header {
+  letter-spacing: 0.02em;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ececec;
+  @media screen and (min-width: 1140px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}

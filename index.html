@@ -23,14 +23,21 @@
     <div class="container conteiner__flex--navigation">
      <nav class="navigation">
          <a href="./index.html" class="logo"> <span class="logo__color"> Web</span>Studio</a>  
-    <ul class="site-nav list">
+         <button type="button" class="menu__button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+           <svg width="24px" height="24px" aria-label="Переключатель мобильного меню">
+            <use class="icon__menu" href="./img/menusprite.svg#menu" ></use><use class="icon__close" href="./img/menusprite.svg#close" ></use>
+           </svg>
+         </button>
+         <div class="menu-container is-open" id="menu-container" data-menu>
+            <div class="container__nav">
+              <ul class="site-nav list">
         <li class="site-nav__item"><a href="./index.html" class="site-nav__item--link" >Студия</a></li>
         <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__item--link">Портфолио</a></li>
         <li class="site-nav__item"><a href="" class="site-nav__item--link">Контакты</a></li>
     </ul>
-    </nav>
-   
-    <ul class="contacts list">
+  </div> 
+    <div class="conteiner__contacts">   
+      <ul class="contacts list">
         <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__item--mail"><svg class="contacts__mail--icon">
                 <use href="./img/sprite.svg#envelope"></use>
               </svg>info@devstudio.com</a></li>
@@ -39,6 +46,12 @@
               </svg>+38 096 111 11 11</a></li>
         
     </ul>
+  </div>
+         </div>
+       
+    </nav>
+   
+ 
     </div>
 
 </header>
@@ -60,6 +73,7 @@
                 class="modal__button"
                 data-modal-close
               ></button>
+            
               <form action="#" class="modal__form">
                  <p class="modal__form--title">Оставьте свои данные, мы вам перезвоним</p>
                  <label class="modal__form--field">
@@ -106,7 +120,7 @@
 
 
 <!-- Особенности -->
-<section class="section">
+<section class="section ">
     <div class="container">
     <ul class="features list"> 
         <li class="features__blocks">
@@ -153,7 +167,7 @@
 <!-- Чем мы занимаемся -->
 <section class="section__about" >
     <div class="container">
-      <h2 class="section__title">Чем мы занимаемся</h2>
+      <h2 class="section__title about__title">Чем мы занимаемся</h2>
       <ul class="about list">
       <li class="about__item"><img src="img/box1.jpg" alt="Робота с Html кодом" width="370">
     <ul class="submenu">
@@ -471,6 +485,7 @@
 
             </div>
 </footer>
+<script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 
