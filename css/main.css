@@ -673,11 +673,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
   margin: 0;
   padding: 0;
-  margin-left: -30px;
-  margin-top: -30px;
 }
 
 .clients__item--link {
@@ -709,6 +706,16 @@ body {
 
 .clients__title {
   padding-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .clients__item {
+    margin-bottom: 30px;
+    width: 194px;
+  }
+  .clients__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
 }
 
 .footer {
