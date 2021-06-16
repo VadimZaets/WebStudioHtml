@@ -4,6 +4,9 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 
 .clients__item--link {
@@ -40,5 +43,22 @@
   }
   .clients__item:nth-child(2n + 1) {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    justify-content: center;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    width: 194px;
+  }
+}
+@media screen and (min-width: 1140px) {
+  .clients__item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
   }
 }
