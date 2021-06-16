@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
@@ -125,13 +126,20 @@ body {
   display: block;
 }
 
-@media screen and (max-width: 763px) {
+.contacts__footer--address {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: normal;
+  color: #fff;
+}
+
+.contacts__footer--item {
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 767px) {
   .contacts__footer--address {
     margin-bottom: 8px;
-    font-size: 14px;
-    line-height: 1.71;
-    font-style: normal;
-    color: #ffffff;
   }
 }
 
@@ -144,6 +152,12 @@ body {
 @media screen and (max-width: 763px) {
   .contacts__footer--section {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__footer--address {
+    margin-top: 20px;
   }
 }
 
@@ -786,12 +800,31 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 763px) {
+.footer__title {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
   .footer__list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
@@ -817,15 +850,6 @@ body {
 @media screen and (min-width: 1140px) {
   .footer__container--logo {
     margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 763px) {
-  .footer__title {
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 1.14;
-    color: var(--footer-text-color);
   }
 }
 
@@ -905,11 +929,47 @@ body {
   }
 }
 
-@media screen and (max-width: 763px) {
+@media screen and (max-width: 767px) {
   .footer__form--field {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+  }
+}
+
+@media screen and (mіn-width: 768px) {
+  .footer__form--field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__form--field {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__form--input {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .footer__form--title {
+    text-align: center;
+  }
+  .footer__contacts--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
+  .contacts__footer {
+    text-align: center;
+  }
+  .join {
+    text-align: center;
+    margin-bottom: 120px;
   }
 }
 
