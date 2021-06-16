@@ -52,15 +52,20 @@ body {
 
 .header {
   letter-spacing: 0.02em;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+
+@media screen and (max-width: 1140px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 1140px) {
   .header {
-    padding-top: 24px;
-    padding-bottom: 25px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -85,7 +90,12 @@ body {
 .navigation {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+@media screen and (max-width: 1139px) {
+  .navigation {
+    justify-content: space-between;
+  }
 }
 
 .menu__button {
@@ -94,6 +104,12 @@ body {
   padding: 0;
   border: none;
   background-color: transparent;
+}
+
+@media screen and (min-width: 767px) {
+  .menu__button {
+    display: none;
+  }
 }
 
 .menu__button .icon__close {
@@ -109,21 +125,36 @@ body {
 }
 
 .menu-container {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 796px;
-  z-index: 3;
-  background-color: #f5f4fa;
   padding: 20px;
   text-align: center;
   font-size: 20px;
 }
 
-.menu-container.is-open {
-  display: block;
+@media screen and (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 796px;
+    z-index: 3;
+    background-color: #f5f4fa;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: flex;
+    align-items: center;
+    padding-left: 88px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-container.is-open {
+    display: block;
+  }
 }
 
 .site-nav {
@@ -171,7 +202,7 @@ body {
   }
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (max-width: 767px) {
   .site-nav {
     display: flex;
     flex-direction: column;
@@ -300,6 +331,15 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 84px;
+  }
+  .contacts__item--mail {
+    margin-bottom: 10px;
+  }
   .contacts__footer--address {
     margin-top: 20px;
   }
@@ -336,7 +376,7 @@ body {
 @media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobilebg.jpg");
-    min-width: 768px;
+    min-width: 800px;
   }
 }
 
