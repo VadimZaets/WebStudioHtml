@@ -65,17 +65,19 @@
 @media screen and (max-width: 767px) {
   .contacts {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
+    padding-bottom: 64px;
   }
-  .contacts__footer--address {
-    margin-bottom: 8px;
+
+  .contacts__mail--header {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    margin-top: 32px;
   }
-  .contacts__footer--section {
-    text-align: center;
-  }
-  .contacts__item--mail,
-  .contacts__item--tel {
+  .contacts__tel--header {
     font-weight: 500;
     font-size: 34px;
     line-height: 40px;
@@ -84,9 +86,38 @@
   .contacts__tel--icon {
     display: none;
   }
+  .menu__social--list {
+    display: flex;
+    justify-content: center;
+  }
+  .menu__social--link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: #2196f3;
+    text-decoration: none;
+  }
+  .menu__social--item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .contacts__footer--address {
     margin-top: 20px;
+  }
+  .menu__social--list {
+    display: none;
+  }
+}
+@media screen and (min-width: 450px) {
+  .contacts__footer--address {
+    margin-bottom: 8px;
+  }
+  .contacts__footer--section {
+    text-align: center;
   }
 }
