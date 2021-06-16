@@ -56,3 +56,8 @@
 .section__team {
   background: #f5f4fa;
 }
+@media screen and (min-width: 1140px) {
+  .section__team {
+    padding-bottom: 50px;
+  }
+}

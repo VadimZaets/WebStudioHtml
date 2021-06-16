@@ -575,6 +575,9 @@ body {
 }
 
 @media screen and (min-width: 1140px) {
+  .section__about {
+    padding-bottom: 50px;
+  }
   .about {
     display: flex;
     flex-wrap: wrap;
@@ -670,6 +673,12 @@ body {
 
 .section__team {
   background: #f5f4fa;
+}
+
+@media screen and (min-width: 1140px) {
+  .section__team {
+    padding-bottom: 50px;
+  }
 }
 
 .subscribe {
@@ -823,7 +832,6 @@ body {
     justify-content: flex-start;
     align-items: baseline;
     padding-top: 60px;
-    padding-bottom: 60px;
   }
 }
 
