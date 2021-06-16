@@ -2,12 +2,7 @@
   letter-spacing: 0.02em;
 
   border-bottom: 1px solid #ececec;
-  @media screen and (max-width: 767px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  @media screen and (min-width: 1140px) {
-    padding: 0;
-    margin: 0;
-  }
+
+  padding-top: 16px;
+  padding-bottom: 16px;
 }

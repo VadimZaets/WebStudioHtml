@@ -21,22 +21,44 @@
     <div class="container conteiner__flex--navigation">
      <nav class="navigation">
          <a href="./index.html" class="logo"> <span class="logo__color"> Web</span>Studio</a>  
-    <ul class="site-nav list">
+         <button type="button" class="menu__button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+           <svg width="24px" height="24px" aria-label="Переключатель мобильного меню">
+            <use class="icon__menu" href="./img/menusprite.svg#menu" ></use><use class="icon__close" href="./img/menusprite.svg#close" ></use>
+           </svg>
+         </button>
+         <div class="menu-container is-open" id="menu-container" data-menu>
+            <div class="container__nav">
+              <ul class="site-nav list">
         <li class="site-nav__item"><a href="./index.html" class="site-nav__item--link" >Студия</a></li>
         <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__item--link">Портфолио</a></li>
         <li class="site-nav__item"><a href="" class="site-nav__item--link">Контакты</a></li>
     </ul>
-    </nav>
-   
-    <ul class="contacts list">
-        <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__item--mail"><svg class="contacts__mail--icon">
+  </div> 
+    <div class="conteiner__contacts">   
+      <ul class="contacts  list">
+        <li class="contacts__item"><a href="mailto:info@devstudio.com" class="contacts__item--mail contacts__mail--header"><svg class="contacts__mail--icon">
                 <use href="./img/sprite.svg#envelope"></use>
               </svg>info@devstudio.com</a></li>
-        <li class="contacts__item"><a href="tel:+380961111111" class="contacts__item--tel"><svg class="contacts__tel--icon">
+        <li class="contacts__item"><a href="tel:+380961111111" class="contacts__item--tel contacts__tel--header"><svg class="contacts__tel--icon">
                 <use href="./img/sprite.svg#smartphone"></use>
               </svg>+38 096 111 11 11</a></li>
         
     </ul>
+  </div>
+  <div class="menu__social">
+    <ul class="menu__social--list list">
+      <li class="menu__social--item"><a href="" class="menu__social--link">Instagram</a></li>
+      <li class="menu__social--item"><a href="" class="menu__social--link">Twitter</a></li>
+      <li class="menu__social--item"><a href="" class="menu__social--link">Facebook</a></li>
+      <li class="menu__social--item"><a href="" class="menu__social--link">LinkedIn</a></li>
+    </ul>
+
+  </div>
+         </div>
+       
+    </nav>
+   
+ 
     </div>
 
 </header>
