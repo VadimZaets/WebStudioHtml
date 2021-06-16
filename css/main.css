@@ -55,7 +55,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 767px) {
   .header {
     padding-top: 16px;
     padding-bottom: 16px;
@@ -354,6 +354,20 @@ body {
   }
   .contacts__footer--section {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .contacts__item--mail {
+    margin: 0;
+  }
+  .contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .conteiner__contacts {
+    padding-left: 84px;
   }
 }
 
